@@ -11,7 +11,7 @@ RUN pip install soprano-tts
 ENV HF_HOME=/app/models
 WORKDIR /app
 
-EXPOSE 8000
+EXPOSE 8080
 
-# Soprano server (OpenAI-compatible)
-CMD ["uvicorn", "soprano.server:app", "--host", "0.0.0.0", "--port", "8000"]
+# Soprano server (OpenAI-compatible) - Listen on 8080
+CMD ["uvicorn", "soprano.server:app", "--host", "0.0.0.0", "--port", "8080"]
