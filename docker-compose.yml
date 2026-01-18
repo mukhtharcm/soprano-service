@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   soprano:
     build: .
     container_name: soprano
     ports:
-      - "8000:8000"
+      - 8000
     environment:
       - HF_HOME=/app/models
     volumes:
