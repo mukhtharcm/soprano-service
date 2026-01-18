@@ -1,7 +1,6 @@
 services:
-  soprano:
+  soprano-tts-service:
     build: .
-    container_name: soprano
     environment:
       - HF_HOME=/app/models
     volumes:
